@@ -1,0 +1,19 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.outtime h1 {
+    border: 3px solid cornflowerblue;
+    margin:10rem;
+}
+.interval h2 {
+    border: 3px solid cornflowerblue;
+    margin:10rem;
+}
+
+#myText {
+    border: 3px solid cornflowerblue;
+    margin:10rem;
+}

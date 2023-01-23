@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jone.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="outtime">
+        <h1>CAMBIO DE COLOR CADA 5 SEGUNDOS</h1>
+    </div>
+    
+    <div class="interval">
+      <h2>CAMBIO DE COLOR CADA 5 SEGUNDOS</h2>
+  </div>
+
+
+    <script>
+        let colors = ["red", "blue", "green", "pink"];
+let count = 0;
+
+function changeColor() {
+  if (count < colors.length) {
+    document.querySelector("h1").style.color = colors[count];
+    count++;
+    setTimeout(changeColor, 5000);
+  }
+}
+
+changeColor();
+
+    </script>
+
+
+<script>
+let cuenta = 0;
+const colores = ["red", "green", "blue", "purple"];
+const h2 = document.querySelector("h2");
+
+setInterval(() => {
+  h2.style.color = colores[cuenta];
+  cuenta++;
+  if (cuenta === 4) {
+    clearInterval();
+  }
+}, 5000);
+</script> 
+
+</body>
+</html>
